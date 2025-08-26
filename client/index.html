@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Civic Lens - Digital Twin for Urban Planning</title>
+    <meta name="description" content="Advanced digital twin platform for urban planning with real-time traffic simulation, 3D mapping, and pollution monitoring. Make data-driven decisions for smarter cities.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Civic Lens - Digital Twin for Urban Planning">
+    <meta property="og:description" content="Advanced digital twin platform for urban planning with real-time traffic simulation, 3D mapping, and pollution monitoring.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <style>
+      /* Ensure map fills container */
+      .leaflet-container {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .leaflet-popup-content {
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body class="h-full">
+    <div id="root"></div>
+    
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <!-- OSMBuildings for 3D buildings -->
+    <script src="https://cdn.osmbuildings.org/OSMBuildings-Leaflet.js"></script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
